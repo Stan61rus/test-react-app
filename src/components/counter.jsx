@@ -10,6 +10,7 @@ function Counter() {
   function increment() {
     setCount(count + 1);
   }
+
   return (
     <div className="ffc">
       <h1>{count}</h1>
