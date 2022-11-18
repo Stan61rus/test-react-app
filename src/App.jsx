@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       {posts.map((e) => {
-        return <PostItem post={e} />;
+        return <PostItem post={e} key={e.id} />;
       })}
 
       <Counter />
