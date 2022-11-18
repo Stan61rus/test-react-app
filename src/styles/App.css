@@ -6,14 +6,17 @@
 
 #root {
   display: flex;
-  justify-self: center;
+  justify-content: center;
 }
 
 .App {
   width: 800px;
 }
 
-.post__content {
+.post {
   display: flex;
   justify-content: space-between;
+  padding: 10px;
+  border: 2px solid teal;
+  align-items: center;
 }
