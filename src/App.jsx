@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Counter from "./components/counter";
 import ClassCounter from "./components/classCounter";
 import Input from "./components/input";
-import PostItem from "./components/postItem";
+import PostList from "./components/postList";
 
 import "./styles/App.css";
 
@@ -16,10 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      {posts.map((e) => {
-        return <PostItem post={e} key={e.id} />;
-      })}
-
+      <PostList posts={posts} title={"Список постов"} />
       <Counter />
       <ClassCounter />
       <Input />
